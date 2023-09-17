@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 200, 141);
+    overflow: hidden;
+}
+
+.background {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(109, 204, 241);
+
+    padding-bottom: 15px;
+}
+
+.NumberContanier {
+    display: flex;
+    width: 260px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 5px;
+    row-gap: 12px;
+    margin-top: 10px;
+}
+
+button {
+    min-width: calc(80% / 4);
+    min-height: 45px;
+    box-shadow: 0 5px rgb(79, 147, 175, 0.49);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+input {
+    margin: 10px 10px;
+    border: none;
+    width: 260px;
+    height: 50px;
+    box-shadow: 0px 5px rgba(79, 147, 175, 0.49);
+    padding: 5px 12px;
+    outline: none;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.operation {
+    background-color: rgb(155, 219, 53);
+}
+.operation:hover {
+    background-color: rgb(147, 196, 69);
+}
+
+.number,
+.solve {
+    background-color: rgb(231, 232, 233);
+}
+.number:hover,
+.solve:hover {
+    background-color: rgb(216, 217, 218);
+}
+
+.reset {
+    background-color: rgb(221, 89, 89);
+}
+.reset:hover {
+    background-color: rgb(192, 76, 76);
+}
